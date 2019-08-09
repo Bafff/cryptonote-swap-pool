@@ -159,9 +159,10 @@ npm update
 
 #### 2) Configuration
 
-Copy the `config_examples/COIN.json` file of your choice to `config.json` then overview each options and change any to match your preferred setup.
-
-Explanation for each field:
+Copy the `config_examples/swap.json` file to `config.json` then overview each options and change any to match your preferred setup.
+<details>
+  <summary>Explanation for each field:</summary>
+  
 ```javascript
 /* Pool host displayed in notifications and front-end */
 "poolHost": "swap.example.com",
@@ -575,6 +576,7 @@ Explanation for each field:
     }
 }
 ```
+</details>
 
 #### 3) Start the pool
 
