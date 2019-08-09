@@ -588,14 +588,15 @@ The file `config.json` is used by default but a file can be specified using the 
 node init.js -config=config_backup.json
 ```
 
-This software contains four distinct modules:
+This software contains six distinct modules:
 * `pool` - Which opens ports for miners to connect and processes shares
 * `api` - Used by the website to display network, pool and miners' data
-* `unlocker` - Processes block candidates and increases miners' balances when blocks are unlocked
-* `payments` - Sends out payments to miners according to their balances stored in redis
+* `blockUnlocker` - Processes block candidates and increases miners' balances when blocks are unlocked
+* `paymentProcessor` - Sends out payments to miners according to their balances stored in redis
 * `chartsDataCollector` - charting and graphs for pool and user
+* `telegramBot` - Used for Telegram notifications and pool info
 
-By default, running the `init.js` script will start up all five modules. You can optionally have the script start
+By default, running the `init.js` script will start up all six modules. You can optionally have the script start
 only start a specific module by using the `-module=name` command argument, for example:
 
 ```bash
